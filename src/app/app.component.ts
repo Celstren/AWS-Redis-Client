@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   constructor(private webSocketsService: WebSocketsService) {}
 
   ngOnInit(): void {
-    this.webSocketsService.listen("messages").subscribe((data) => {
+    this.webSocketsService.listen("CHAT_MESSAGE").subscribe((data) => {
       console.log(data);
     });
   }
