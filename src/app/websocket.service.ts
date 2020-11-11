@@ -13,10 +13,11 @@ export class WebsocketService {
     let mySubject = webSocket({
       url: url,
     });
-    mySubject.subscribe(
-      msg => console.log('message received: ' + JSON.stringify(msg)), // Called whenever there is a message from the server.
-      err => console.log(err), // Called if at any point WebSocket API signals some kind of error.
-      () => console.log('complete') // Called when connection is closed (for whatever reason).
-    );
+    return mySubject;
+    // return mySubject.subscribe(
+    //   msg => console.log('message received: ' + JSON.stringify(msg)), // Called whenever there is a message from the server.
+    //   err => console.log(err), // Called if at any point WebSocket API signals some kind of error.
+    //   () => console.log('complete') // Called when connection is closed (for whatever reason).
+    // );
   }
 }
