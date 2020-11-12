@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  ws_server: "ws://ec2-52-15-45-189.us-east-2.compute.amazonaws.com:3000/",
+  server: "http://ec2-3-139-57-135.us-east-2.compute.amazonaws.com:3000",
+  ws_server: "ws://ec2-3-139-57-135.us-east-2.compute.amazonaws.com:3000/",
 };
 
 /*
